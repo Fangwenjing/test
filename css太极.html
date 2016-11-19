@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style type="text/css">
+	.yuan{
+		border-top:2px solid #ddd;
+		border-right:2px solid #ddd;
+		border-left:2px solid #ddd;
+		border-bottom:50px solid #ddd;
+		width:96px;
+		height:48px;
+		border-radius:50%;
+		position:relative;
+
+	}
+	.yuan:after{
+		content:'';
+		width:10px;
+		height:10px;
+		border:19px solid #ddd;
+		/*起初背景是透明的，就被父元素的颜色遮盖住了*/
+		background:#fff;
+		border-radius:50%;
+		position:absolute;
+		top:25px;
+		left:0px;
+	}
+	.yuan::before{
+		content:'';
+		width:10px;
+		height:10px;
+		border:19px solid #fff;
+		background:#ddd;
+		position:absolute;
+		right:0;
+		top:25px;
+		border-radius:50%;
+	}
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+  <h1>半月和太极</h1>
+	<div class="yuan">
+	</div>
+ </body>
+</html>
